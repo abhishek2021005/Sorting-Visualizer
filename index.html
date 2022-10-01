@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -59,18 +60,18 @@
     </div>
   </div>
 </section> -->
-
+<!--  -->
 
 
 	<div class="header">
 		<h1>Abhishek's Visualizer</h1>
 		<div class="vars">
 			<div class="range">
-				<div class="slide"><label >ِArray Size</label> : <input id="bars" type="range" name="bars"
-						min="1" max="100" value="50" >
+				<div class="slide"><label for="bars">ِArray Size</label> : <input id="bars" type="range" name="bars"
+						min="1" max="100" value="50" oninput="setup()" onchange="setup()">
 					<span id="b"> </span></div>
-				<div class="slide"><label >Speed</label> : <input id="delay" type="range" name="delay"
-						min="0" max="1000" value="25" >
+				<div class="slide"><label for="delay">Speed</label> : <input id="delay" type="range" name="delay"
+						min="0" max="1000" value="25" oninput="setup()" onchange="setup()">
 					<span id="d"></span></div>
 			</div>
 			<div class="sorts">
@@ -81,11 +82,13 @@
 				<input type="button" value="Quick Sort">
 				<input type="button" value="Heap Sort"><br><br>
 			</div>
-			<button >Generate New Array</button>
+			<button onclick="reset()">Generate New Array</button>
 		</div>
 	</div>
 	<div id="container">
 	</div>
+		<script src="App/beep.js"></script>
+		<script src="App/script.js"></script>
 </body>
 
-</html>
+</html> -->
